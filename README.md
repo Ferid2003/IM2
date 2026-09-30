@@ -5,25 +5,6 @@ Tables are created by the SQL scripts in `init-scripts/`, which run inside the D
 
 ## 1. `.env` file
 
-Create `.env` next to `compose.yaml`:
-
-```env
-RESOURCE_SERVICE_PORT=8080
-RESOURCE_DB_URL=jdbc:postgresql://resource-db:5432/resource-db
-RESOURCE_DB_INTERNAL_PORT=5432
-RESOURCE_DB_EXPOSE_PORT=5434
-RESOURCE_DB_NAME=resource-db
-RESOURCE_DB_USER=postgres
-RESOURCE_DB_PASSWORD=postgres
-SONG_SERVICE_PORT=8081
-SONG_DB_URL=jdbc:postgresql://song-db:5432/song-db
-SONG_DB_INTERNAL_PORT=5432
-SONG_DB_EXPOSE_PORT=5433
-SONG_DB_NAME=song-db
-SONG_DB_USER=postgres
-SONG_DB_PASSWORD=postgres
-```
-
 | Variable | Meaning |
 |---|---|
 | `*_SERVICE_PORT` | Port the service listens on (and is published on the host) |
